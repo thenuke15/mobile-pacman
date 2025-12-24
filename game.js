@@ -234,7 +234,7 @@ let ghosts = [];
 
 function initGame() {
     grid = mapLayout.map(row => [...row]);
-    pacman = new Pacman(13.5, 23);
+    pacman = new Pacman(14, 23);
     ghosts = [
         new Ghost(13.5, 11, 'red'), new Ghost(13.5, 14, 'pink'),
         new Ghost(12, 14, 'cyan'), new Ghost(15, 14, 'orange')
@@ -242,7 +242,7 @@ function initGame() {
 }
 
 function resetPositions() {
-    pacman.x = 13.5 * TILE_SIZE; pacman.y = 23 * TILE_SIZE;
+    pacman.x = 14 * TILE_SIZE; pacman.y = 23 * TILE_SIZE;
     pacman.dir = DIRECTIONS.STOP; pacman.nextDir = DIRECTIONS.STOP;
     ghosts[0].x = 13.5 * TILE_SIZE; ghosts[0].y = 11 * TILE_SIZE;
     ghosts[1].x = 13.5 * TILE_SIZE; ghosts[1].y = 14 * TILE_SIZE;
